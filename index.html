@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Özgün Dental - Modern diş kliniği, uzman kadro ve son teknoloji tedaviler">
+    <meta name="keywords" content="diş kliniği, diş hekimi, implant, diş beyazlatma, ortodonti">
+    <meta name="author" content="Özgün Dental">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Özgün Dental - Gülüşünüze Değer Katıyoruz">
+    <meta property="og:description" content="Modern diş kliniği, uzman kadro ve son teknoloji tedaviler">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+    
+    <title data-i18n="site_title">Özgün Dental - Gülüşünüze Değer Katıyoruz</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts - Different combination -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <a href="tel:+905551234567"><i data-lucide="phone"></i> +90 555 123 45 67</a>
+                    <a href="mailto:info@ozgundental.com"><i data-lucide="mail"></i> info@ozgundental.com</a>
+                </div>
+                <div class="top-bar-right">
+                    <span><i data-lucide="clock"></i> <span data-i18n="topbar_hours">Pzt-Cmt: 09:00 - 19:00</span></span>
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="tr">TR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="Özgün Dental">
+                    <div class="logo-text">
+                        <span class="logo-name">Özgün</span>
+                        <span class="logo-tagline">DENTAL</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Ana Sayfa</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav_services">Hizmetler</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">Hakkımızda</a></li>
+                    <li><a href="#doctors" class="nav-link" data-i18n="nav_team">Doktorlarımız</a></li>
+                    <li><a href="blog.html" class="nav-link" data-i18n="nav_blog">Blog</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="tel:+905551234567" class="btn btn-primary" data-i18n="nav_call">
+                        <i data-lucide="phone"></i> Hemen Ara
+                    </a>
+                    <button class="mobile-toggle" id="mobile-toggle" aria-label="Menü">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - Split Design -->
+    <section class="hero" id="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <span class="hero-label" data-i18n="hero_label">Premium Diş Sağlığı Hizmetleri</span>
+                <h1 class="hero-title" data-i18n="hero_title">Gülüşünüze <span class="gold-text">Değer</span> Katıyoruz</h1>
+                <p class="hero-desc" data-i18n="hero_desc">20 yılı aşkın deneyimimiz ve son teknoloji ekipmanlarımızla, size en iyi diş sağlığı hizmetini sunuyoruz.</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i data-lucide="award"></i>
+                        <span data-i18n="hero_feature_1">Uzman Kadro</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="shield-check"></i>
+                        <span data-i18n="hero_feature_2">%100 Steril</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="heart-handshake"></i>
+                        <span data-i18n="hero_feature_3">Hasta Memnuniyeti</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="tel:+905551234567" class="btn btn-primary btn-lg">
+                        <i data-lucide="phone"></i>
+                        <span data-i18n="hero_cta">Ücretsiz Danışmanlık</span>
+                    </a>
+                    <a href="#services" class="btn btn-outline btn-lg">
+                        <span data-i18n="hero_cta_2">Hizmetleri İncele</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/hero-doctor.jpg" alt="Diş Hekimi" class="hero-img">
+                    <div class="hero-badge">
+                        <span class="badge-number">20+</span>
+                        <span class="badge-text" data-i18n="hero_badge">Yıllık Deneyim</span>
+                    </div>
+                </div>
+                <div class="hero-stats-card">
+                    <div class="stat">
+                        <span class="stat-num" data-count="15000">0</span>
+                        <span class="stat-label" data-i18n="stat_patients">Mutlu Hasta</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="98">0</span><span class="stat-percent">%</span>
+                        <span class="stat-label" data-i18n="stat_satisfaction">Memnuniyet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Card Grid -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label" data-i18n="services_label">Hizmetlerimiz</span>
+                <h2 class="section-title" data-i18n="services_title">Sunduğumuz <span class="gold-text">Tedaviler</span></h2>
+                <p class="section-desc" data-i18n="services_desc">En son teknoloji ve deneyimli kadromuzla kapsamlı diş sağlığı hizmetleri sunuyoruz.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i data-lucide="gem"></i>
+                    </div>
+                    <h3 data-i18n="service_1_title">İmplant Tedavisi</h3>
+                    <p data-i18n="service_1_desc">Eksik dişleriniz için kalıcı ve doğal görünümlü çözümler.</p>
+                    <a href="#" class="service-link">
+                        <span data-i18n="learn_more">Detaylı Bilgi</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3 data-i18n="service_2_title">Diş Beyazlatma</h3>
+                    <p data-i18n="service_2_desc">Profesyonel yöntemlerle daha beyaz ve parlak dişler.</p>
+                    <a href="#" class="service-link">
+                        <span data-i18n="learn_more">Detaylı Bilgi</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i data-lucide="smile"></i>
+                    </div>
+                    <h3 data-i18n="service_3_title">Estetik Diş Hekimliği</h3>
+                    <p data-i18n="service_3_desc">Gülüş tasarımı ve estetik uygulamalar.</p>
+                    <a href="#" class="service-link">
+                        <span data-i18n="learn_more">Detaylı Bilgi</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i data-lucide="git-branch"></i>
+                    </div>
+                    <h3 data-i18n="service_4_title">Ortodonti</h3>
+                    <p data-i18n="service_4_desc">Diş teli ve şeffaf plak tedavileri.</p>
+                    <a href="#" class="service-link">
+                        <span data-i18n="learn_more">Detaylı Bilgi</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i data-lucide="syringe"></i>
+                    </div>
+                    <h3 data-i18n="service_5_title">Kanal Tedavisi</h3>
+                    <p data-i18n="service_5_desc">Ağrısız ve konforlu kanal tedavisi uygulamaları.</p>
+                    <a href="#" class="service-link">
+                        <span data-i18n="learn_more">Detaylı Bilgi</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i data-lucide="baby"></i>
+                    </div>
+                    <h3 data-i18n="service_6_title">Çocuk Diş Hekimliği</h3>
+                    <p data-i18n="service_6_desc">Çocuk dostu ortamda koruyucu ve tedavi edici uygulamalar.</p>
+                    <a href="#" class="service-link">
+                        <span data-i18n="learn_more">Detaylı Bilgi</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Asymmetric Layout -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-images" data-aos="fade-right">
+                    <div class="about-img-main">
+                        <img src="assets/images/clinic-interior.jpg" alt="Klinik İç Mekan">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="assets/images/clinic-equipment.jpg" alt="Modern Ekipman">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">20</span>
+                        <span class="exp-text" data-i18n="exp_years">Yıllık<br>Tecrübe</span>
+                    </div>
+                </div>
+                
+                <div class="about-content" data-aos="fade-left">
+                    <span class="section-label" data-i18n="about_label">Hakkımızda</span>
+                    <h2 class="section-title" data-i18n="about_title">Neden <span class="gold-text">Özgün Dental?</span></h2>
+                    <p class="about-text" data-i18n="about_text">2004 yılından bu yana Samsun'da hizmet veren kliniğimiz, modern teknoloji ve deneyimli kadrosuyla sizlere en iyi diş sağlığı hizmetini sunmaktadır.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i data-lucide="microscope"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-i18n="about_f1_title">Son Teknoloji</h4>
+                                <p data-i18n="about_f1_desc">Dijital röntgen, 3D tarama ve lazer teknolojisi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-i18n="about_f2_title">Uzman Ekip</h4>
+                                <p data-i18n="about_f2_desc">Her alanda uzmanlaşmış deneyimli hekimler</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-i18n="about_f3_title">Sterilizasyon</h4>
+                                <p data-i18n="about_f3_desc">Uluslararası standartlarda hijyen protokolleri</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="tel:+905551234567" class="btn btn-primary">
+                        <i data-lucide="phone"></i>
+                        <span data-i18n="about_cta">Bizi Arayın</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label" data-i18n="doctors_label">Ekibimiz</span>
+                <h2 class="section-title" data-i18n="doctors_title">Uzman <span class="gold-text">Hekimlerimiz</span></h2>
+                <p class="section-desc" data-i18n="doctors_desc">Alanında uzman ve deneyimli diş hekimlerimizle tanışın.</p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="doctor-image">
+                        <img src="assets/images/doctor-1.jpg" alt="Dr. Ahmet Yılmaz">
+                        <div class="doctor-social">
+                            <a href="#"><i data-lucide="linkedin"></i></a>
+                            <a href="#"><i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Ahmet Yılmaz</h3>
+                        <span class="doctor-title" data-i18n="doctor_1_title">Kurucu Hekim</span>
+                        <p class="doctor-specialty" data-i18n="doctor_1_specialty">İmplant & Cerrahi</p>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="doctor-image">
+                        <img src="assets/images/doctor-2.jpg" alt="Dr. Elif Demir">
+                        <div class="doctor-social">
+                            <a href="#"><i data-lucide="linkedin"></i></a>
+                            <a href="#"><i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Elif Demir</h3>
+                        <span class="doctor-title" data-i18n="doctor_2_title">Diş Hekimi</span>
+                        <p class="doctor-specialty" data-i18n="doctor_2_specialty">Estetik Diş Hekimliği</p>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="doctor-image">
+                        <img src="assets/images/doctor-3.jpg" alt="Dr. Can Özkan">
+                        <div class="doctor-social">
+                            <a href="#"><i data-lucide="linkedin"></i></a>
+                            <a href="#"><i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Can Özkan</h3>
+                        <span class="doctor-title" data-i18n="doctor_3_title">Uzman Diş Hekimi</span>
+                        <p class="doctor-specialty" data-i18n="doctor_3_specialty">Ortodonti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header light" data-aos="fade-up">
+                <span class="section-label" data-i18n="testimonials_label">Hasta Yorumları</span>
+                <h2 class="section-title" data-i18n="testimonials_title">Hastalarımız <span class="gold-text">Ne Diyor?</span></h2>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-track">
+                    <div class="testimonial-item active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i data-lucide="quote"></i>
+                            </div>
+                            <p class="testimonial-text" data-i18n="testimonial_1">"İmplant tedavim boyunca çok ilgili ve profesyonel bir hizmet aldım. Sonuçtan çok memnunum, teşekkürler Özgün Dental!"</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/patient-1.jpg" alt="Mehmet K.">
+                                <div>
+                                    <h4>Mehmet K.</h4>
+                                    <span data-i18n="testimonial_1_treatment">İmplant Tedavisi</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i data-lucide="quote"></i>
+                            </div>
+                            <p class="testimonial-text" data-i18n="testimonial_2">"Diş beyazlatma işleminden sonra gülümsemekten çekinmiyorum artık. Harika bir ekip!"</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/patient-2.jpg" alt="Zeynep A.">
+                                <div>
+                                    <h4>Zeynep A.</h4>
+                                    <span data-i18n="testimonial_2_treatment">Diş Beyazlatma</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i data-lucide="quote"></i>
+                            </div>
+                            <p class="testimonial-text" data-i18n="testimonial_3">"Oğlumun diş korkusunu yendik! Çocuklara özel yaklaşımları için çok teşekkür ederim."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/patient-3.jpg" alt="Ayşe T.">
+                                <div>
+                                    <h4>Ayşe T.</h4>
+                                    <span data-i18n="testimonial_3_treatment">Çocuk Diş Tedavisi</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <button class="nav-btn prev" aria-label="Önceki"><i data-lucide="chevron-left"></i></button>
+                    <div class="nav-dots">
+                        <button class="dot active"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                    </div>
+                    <button class="nav-btn next" aria-label="Sonraki"><i data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview -->
+    <section class="blog-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label" data-i18n="blog_label">Blog</span>
+                <h2 class="section-title" data-i18n="blog_title">Sağlık <span class="gold-text">Rehberi</span></h2>
+                <p class="section-desc" data-i18n="blog_desc">Ağız ve diş sağlığı hakkında faydalı bilgiler.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-1.jpg" alt="İmplant Tedavisi">
+                        <span class="blog-category" data-i18n="blog_cat_implant">İmplant</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i data-lucide="calendar"></i> 15 Ocak 2026</span>
+                            <span><i data-lucide="clock"></i> 5 dk okuma</span>
+                        </div>
+                        <h3 data-i18n="blog_1_title">İmplant Tedavisi Hakkında Bilmeniz Gerekenler</h3>
+                        <p data-i18n="blog_1_excerpt">Eksik dişleriniz için en doğal ve kalıcı çözüm olan implant tedavisi hakkında merak edilenler...</p>
+                        <a href="blog-post.html" class="blog-link">
+                            <span data-i18n="read_more">Devamını Oku</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-2.jpg" alt="Diş Bakımı">
+                        <span class="blog-category" data-i18n="blog_cat_care">Bakım</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i data-lucide="calendar"></i> 10 Ocak 2026</span>
+                            <span><i data-lucide="clock"></i> 4 dk okuma</span>
+                        </div>
+                        <h3 data-i18n="blog_2_title">Doğru Diş Fırçalama Teknikleri</h3>
+                        <p data-i18n="blog_2_excerpt">Sağlıklı dişler için doğru fırçalama tekniklerini öğrenin ve diş sağlığınızı koruyun...</p>
+                        <a href="blog-post.html" class="blog-link">
+                            <span data-i18n="read_more">Devamını Oku</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-3.jpg" alt="Çocuk Diş Sağlığı">
+                        <span class="blog-category" data-i18n="blog_cat_pediatric">Çocuk</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i data-lucide="calendar"></i> 5 Ocak 2026</span>
+                            <span><i data-lucide="clock"></i> 6 dk okuma</span>
+                        </div>
+                        <h3 data-i18n="blog_3_title">Çocuklarda Diş Sağlığının Önemi</h3>
+                        <p data-i18n="blog_3_excerpt">Çocuğunuzun süt dişlerinden itibaren diş sağlığını korumanın ipuçları...</p>
+                        <a href="blog-post.html" class="blog-link">
+                            <span data-i18n="read_more">Devamını Oku</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-cta" data-aos="fade-up">
+                <a href="blog.html" class="btn btn-outline">
+                    <span data-i18n="view_all_posts">Tüm Yazıları Gör</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-label" data-i18n="contact_label">İletişim</span>
+                    <h2 class="section-title" data-i18n="contact_title">Bize <span class="gold-text">Ulaşın</span></h2>
+                    <p class="contact-desc" data-i18n="contact_desc">Sorularınız için bizi arayın veya kliniğimizi ziyaret edin.</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact_address_label">Adres</h4>
+                                <p data-i18n="contact_address">Atakum Mah. Sağlık Cad. No:55, Samsun</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact_phone_label">Telefon</h4>
+                                <p><a href="tel:+905551234567">+90 555 123 45 67</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact_email_label">E-posta</h4>
+                                <p><a href="mailto:info@ozgundental.com">info@ozgundental.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact_hours_label">Çalışma Saatleri</h4>
+                                <p data-i18n="contact_hours">Pzt-Cmt: 09:00 - 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="https://wa.me/905551234567" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-cta-box" data-aos="fade-left">
+                    <div class="cta-content">
+                        <i data-lucide="phone-call"></i>
+                        <h3 data-i18n="cta_title">Hemen Arayın</h3>
+                        <p data-i18n="cta_desc">Ücretsiz danışmanlık ve randevu için bizi hemen arayın.</p>
+                        <a href="tel:+905551234567" class="btn btn-gold btn-lg">
+                            <i data-lucide="phone"></i>
+                            +90 555 123 45 67
+                        </a>
+                        <a href="https://wa.me/905551234567" class="btn btn-whatsapp btn-lg" target="_blank">
+                            <i data-lucide="message-circle"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="contact-map" data-aos="fade-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47977.65392145029!2d36.2540963!3d41.3286558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408877de62c7169b%3A0xa5e5444cf7ea5841!2sAtakum%2C%20Samsun!5e0!3m2!1str!2str!4v1704123456789!5m2!1str!2str"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="Özgün Dental">
+                        <div class="logo-text">
+                            <span class="logo-name">Özgün</span>
+                            <span class="logo-tagline">DENTAL</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc" data-i18n="footer_desc">20 yılı aşkın deneyimimizle Samsun'da diş sağlığı hizmetleri sunuyoruz.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-i18n="footer_quick_links">Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#hero" data-i18n="nav_home">Ana Sayfa</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Hizmetler</a></li>
+                        <li><a href="#about" data-i18n="nav_about">Hakkımızda</a></li>
+                        <li><a href="#doctors" data-i18n="nav_team">Doktorlarımız</a></li>
+                        <li><a href="blog.html" data-i18n="nav_blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-i18n="footer_services">Hizmetler</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="service_1_title">İmplant Tedavisi</a></li>
+                        <li><a href="#" data-i18n="service_2_title">Diş Beyazlatma</a></li>
+                        <li><a href="#" data-i18n="service_3_title">Estetik Diş Hekimliği</a></li>
+                        <li><a href="#" data-i18n="service_4_title">Ortodonti</a></li>
+                        <li><a href="#" data-i18n="service_5_title">Kanal Tedavisi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 data-i18n="footer_contact">İletişim</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin"></i> <span data-i18n="contact_address">Atakum Mah. Sağlık Cad. No:55, Samsun</span></li>
+                        <li><i data-lucide="phone"></i> <a href="tel:+905551234567">+90 555 123 45 67</a></li>
+                        <li><i data-lucide="mail"></i> <a href="mailto:info@ozgundental.com">info@ozgundental.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Özgün Dental. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/905551234567" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Yukarı">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

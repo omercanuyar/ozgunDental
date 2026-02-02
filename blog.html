@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Özgün Dental Blog - Ağız ve diş sağlığı hakkında faydalı bilgiler">
+    <title data-i18n="blog_page_title">Blog | Özgün Dental</title>
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <a href="tel:+905551234567"><i data-lucide="phone"></i> +90 555 123 45 67</a>
+                    <a href="mailto:info@ozgundental.com"><i data-lucide="mail"></i> info@ozgundental.com</a>
+                </div>
+                <div class="top-bar-right">
+                    <span><i data-lucide="clock"></i> <span data-i18n="topbar_hours">Pzt-Cmt: 09:00 - 19:00</span></span>
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="tr">TR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.svg" alt="Özgün Dental">
+                    <div class="logo-text">
+                        <span class="logo-name">Özgün</span>
+                        <span class="logo-tagline">DENTAL</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#hero" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                    <li><a href="index.html#services" class="nav-link" data-i18n="nav_services">Hizmetler</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımızda</a></li>
+                    <li><a href="index.html#doctors" class="nav-link" data-i18n="nav_team">Doktorlarımız</a></li>
+                    <li><a href="blog.html" class="nav-link active" data-i18n="nav_blog">Blog</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="tel:+905551234567" class="btn btn-primary" data-i18n="nav_call">
+                        <i data-lucide="phone"></i> Hemen Ara
+                    </a>
+                    <button class="mobile-toggle" id="mobile-toggle" aria-label="Menü">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <span class="section-label" data-i18n="blog_label">Blog</span>
+                <h1 data-i18n="blog_page_heading">Sağlık Rehberi</h1>
+                <p data-i18n="blog_page_desc">Ağız ve diş sağlığı hakkında güncel ve faydalı bilgiler</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Blog Posts -->
+                <div class="blog-posts">
+                    <!-- Featured Post -->
+                    <article class="blog-card featured" data-aos="fade-up">
+                        <div class="blog-image">
+                            <img src="assets/images/blog-featured.jpg" alt="İmplant Tedavisi">
+                            <span class="blog-category">İmplant</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i data-lucide="calendar"></i> 15 Ocak 2026</span>
+                                <span><i data-lucide="clock"></i> 8 dk okuma</span>
+                            </div>
+                            <h2>İmplant Tedavisi: Kapsamlı Rehber</h2>
+                            <p>Eksik dişleriniz için en doğal ve kalıcı çözüm olan implant tedavisi hakkında bilmeniz gereken her şey bu yazıda. İmplant tedavisinin avantajları, işlem süreci ve bakım önerileri...</p>
+                            <a href="blog-post.html" class="blog-link">
+                                <span>Devamını Oku</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Regular Posts Grid -->
+                    <div class="blog-grid">
+                        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="blog-image">
+                                <img src="assets/images/blog-1.jpg" alt="Diş Beyazlatma">
+                                <span class="blog-category">Estetik</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i data-lucide="calendar"></i> 12 Ocak 2026</span>
+                                    <span><i data-lucide="clock"></i> 5 dk</span>
+                                </div>
+                                <h3>Profesyonel Diş Beyazlatma Yöntemleri</h3>
+                                <p>Klinikte uygulanan diş beyazlatma işlemleri ve evde yapılabilecek destekleyici uygulamalar...</p>
+                                <a href="blog-post.html" class="blog-link">
+                                    <span>Devamını Oku</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="blog-image">
+                                <img src="assets/images/blog-2.jpg" alt="Diş Fırçalama">
+                                <span class="blog-category">Bakım</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i data-lucide="calendar"></i> 10 Ocak 2026</span>
+                                    <span><i data-lucide="clock"></i> 4 dk</span>
+                                </div>
+                                <h3>Doğru Diş Fırçalama Teknikleri</h3>
+                                <p>Sağlıklı dişler için doğru fırçalama tekniklerini öğrenin ve diş sağlığınızı koruyun...</p>
+                                <a href="blog-post.html" class="blog-link">
+                                    <span>Devamını Oku</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="blog-image">
+                                <img src="assets/images/blog-3.jpg" alt="Çocuk Diş Sağlığı">
+                                <span class="blog-category">Çocuk</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i data-lucide="calendar"></i> 8 Ocak 2026</span>
+                                    <span><i data-lucide="clock"></i> 6 dk</span>
+                                </div>
+                                <h3>Çocuklarda Diş Sağlığının Önemi</h3>
+                                <p>Çocuğunuzun süt dişlerinden itibaren diş sağlığını korumanın ipuçları ve öneriler...</p>
+                                <a href="blog-post.html" class="blog-link">
+                                    <span>Devamını Oku</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="blog-image">
+                                <img src="assets/images/blog-4.jpg" alt="Ortodonti">
+                                <span class="blog-category">Ortodonti</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i data-lucide="calendar"></i> 5 Ocak 2026</span>
+                                    <span><i data-lucide="clock"></i> 5 dk</span>
+                                </div>
+                                <h3>Şeffaf Plak mı, Diş Teli mi?</h3>
+                                <p>Ortodontik tedavi seçeneklerini karşılaştırarak size en uygun olanını seçmenize yardımcı oluyoruz...</p>
+                                <a href="blog-post.html" class="blog-link">
+                                    <span>Devamını Oku</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="blog-image">
+                                <img src="assets/images/blog-5.jpg" alt="Diş Eti Sağlığı">
+                                <span class="blog-category">Sağlık</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i data-lucide="calendar"></i> 2 Ocak 2026</span>
+                                    <span><i data-lucide="clock"></i> 4 dk</span>
+                                </div>
+                                <h3>Diş Eti Hastalıklarına Dikkat!</h3>
+                                <p>Diş eti hastalıklarının belirtileri, nedenleri ve tedavi yöntemleri hakkında bilmeniz gerekenler...</p>
+                                <a href="blog-post.html" class="blog-link">
+                                    <span>Devamını Oku</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="blog-image">
+                                <img src="assets/images/blog-6.jpg" alt="Kanal Tedavisi">
+                                <span class="blog-category">Tedavi</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i data-lucide="calendar"></i> 28 Aralık 2025</span>
+                                    <span><i data-lucide="clock"></i> 5 dk</span>
+                                </div>
+                                <h3>Kanal Tedavisi Korkutucu Değil!</h3>
+                                <p>Modern tekniklerle ağrısız kanal tedavisi mümkün. Kanal tedavisi hakkında doğru bilinen yanlışlar...</p>
+                                <a href="blog-post.html" class="blog-link">
+                                    <span>Devamını Oku</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination" data-aos="fade-up">
+                        <button class="pagination-btn" disabled><i data-lucide="chevron-left"></i></button>
+                        <button class="pagination-num active">1</button>
+                        <button class="pagination-num">2</button>
+                        <button class="pagination-num">3</button>
+                        <button class="pagination-btn"><i data-lucide="chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Search -->
+                    <div class="sidebar-widget" data-aos="fade-up">
+                        <h3 class="widget-title">Ara</h3>
+                        <div class="search-form">
+                            <input type="text" placeholder="Yazılarda ara...">
+                            <button><i data-lucide="search"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="widget-title">Kategoriler</h3>
+                        <ul class="category-list">
+                            <li><a href="#">İmplant <span>8</span></a></li>
+                            <li><a href="#">Estetik <span>6</span></a></li>
+                            <li><a href="#">Bakım <span>12</span></a></li>
+                            <li><a href="#">Çocuk <span>5</span></a></li>
+                            <li><a href="#">Ortodonti <span>4</span></a></li>
+                            <li><a href="#">Tedavi <span>9</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- CTA Widget -->
+                    <div class="sidebar-widget cta-widget" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cta-content">
+                            <i data-lucide="phone-call"></i>
+                            <h3>Hemen Arayın</h3>
+                            <p>Ücretsiz danışmanlık için bizi arayın.</p>
+                            <a href="tel:+905551234567" class="btn btn-gold">
+                                <i data-lucide="phone"></i>
+                                Ara
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Popular Posts -->
+                    <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="widget-title">Popüler Yazılar</h3>
+                        <div class="popular-posts">
+                            <article class="popular-post">
+                                <img src="assets/images/blog-1.jpg" alt="Blog">
+                                <div>
+                                    <h4><a href="blog-post.html">İmplant Tedavisi Rehberi</a></h4>
+                                    <span>15 Ocak 2026</span>
+                                </div>
+                            </article>
+                            <article class="popular-post">
+                                <img src="assets/images/blog-2.jpg" alt="Blog">
+                                <div>
+                                    <h4><a href="blog-post.html">Diş Beyazlatma İpuçları</a></h4>
+                                    <span>12 Ocak 2026</span>
+                                </div>
+                            </article>
+                            <article class="popular-post">
+                                <img src="assets/images/blog-3.jpg" alt="Blog">
+                                <div>
+                                    <h4><a href="blog-post.html">Çocuk Diş Bakımı</a></h4>
+                                    <span>10 Ocak 2026</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="Özgün Dental">
+                        <div class="logo-text">
+                            <span class="logo-name">Özgün</span>
+                            <span class="logo-tagline">DENTAL</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">20 yılı aşkın deneyimimizle Samsun'da diş sağlığı hizmetleri sunuyoruz.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="index.html#services">Hizmetler</a></li>
+                        <li><a href="index.html#about">Hakkımızda</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="#">İmplant Tedavisi</a></li>
+                        <li><a href="#">Diş Beyazlatma</a></li>
+                        <li><a href="#">Ortodonti</a></li>
+                        <li><a href="#">Kanal Tedavisi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin"></i> Atakum Mah. Sağlık Cad. No:55, Samsun</li>
+                        <li><i data-lucide="phone"></i> <a href="tel:+905551234567">+90 555 123 45 67</a></li>
+                        <li><i data-lucide="mail"></i> <a href="mailto:info@ozgundental.com">info@ozgundental.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Özgün Dental. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/905551234567" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Yukarı">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
