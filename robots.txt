@@ -1,0 +1,41 @@
+# Özgün Dental - robots.txt
+# Samsun Atakum Premium Diş Kliniği
+# https://ozgundental.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ozgundental.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block unnecessary files from indexing
+Disallow: /css/
+Disallow: /js/
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Allow CSS and JS for Google (important for rendering)
+User-agent: Googlebot
+Allow: /css/
+Allow: /js/
+Allow: /*.css$
+Allow: /*.js$
+
+# Host directive (for Yandex)
+Host: https://ozgundental.com

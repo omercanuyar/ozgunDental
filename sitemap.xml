@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://ozgundental.com/</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozgundental.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozgundental.com/?lang=en"/>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://ozgundental.com/assets/images/og-image.jpg</image:loc>
+            <image:title>Özgün Dental - Samsun Atakum Diş Kliniği</image:title>
+            <image:caption>Samsun Atakum'da premium diş kliniği</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Blog Ana Sayfa -->
+    <url>
+        <loc>https://ozgundental.com/blog.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Blog Yazıları -->
+    <url>
+        <loc>https://ozgundental.com/blog-post.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://ozgundental.com/assets/images/blog-featured.jpg</image:loc>
+            <image:title>İmplant Tedavisi Rehberi - Samsun</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Hizmetler Section -->
+    <url>
+        <loc>https://ozgundental.com/#services</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Hakkımızda Section -->
+    <url>
+        <loc>https://ozgundental.com/#about</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Doktorlarımız Section -->
+    <url>
+        <loc>https://ozgundental.com/#doctors</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- İletişim Section -->
+    <url>
+        <loc>https://ozgundental.com/#contact</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+</urlset>
